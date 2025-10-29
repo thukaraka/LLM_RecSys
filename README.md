@@ -1,7 +1,7 @@
 # LLM_RecSys: Large Language Model–based Recommendation System
 
 This repository contains experimental code and notebooks for **accuracy, fairness, and Diversity Evaluations**
-It explores how prompting strategies, decoding temperatures, and fairness-promoting directives affect recommendation quality across models such as **OpenAI GPT-4o** and **Mistral** families.
+It explores how prompting formats, decoding temperatures, and decoding strategies affect recommendation quality across models such as **OpenAI GPT-4o** and **Mistral** families.
 
 ---
 
