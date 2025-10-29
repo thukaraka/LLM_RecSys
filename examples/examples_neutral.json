@@ -1,0 +1,12 @@
+{
+  "random": [
+    {
+      "user_history": ["Toy Story (1995)","Get Shorty (1995)","Dead Man Walking (1995)","Copycat (1995),","Seven (Se7en) (1995)","Twelve Monkeys (1995)","Usual Suspects, The (1995)","Rumble in the Bronx (1995)","Birdcage, The (1996)","Disclosure (1994)"],
+      "recommendation": ["Apollo 13 (1995)","Kissed (1996)","Batman Forever (1995)","Blue Sky (1994)","Star Wars (1977)","Kiss of Death (1995)","Hoop Dreams (1994)","Jade (1995)","Professional, The (1994)","Reality Bites (1994)"]
+    },
+    {
+      "user_history": ["Three Colors: Blue (1993)","Crash (1996)","Three Colors: Red (1994)","Spawn (1997)","Star Wars (1977)","Red Corner (1997)","Usual Suspects, The (1995)","Saint, The (1997)","Raiders of the Lost Ark (1981)","City of Lost Children, The (1995)"],
+      "recommendation": ["G.I. Jane (1997)","Dante's Peak (1997)","Double vie de Véronique, La (Double Life of Veronique, The) (1991)","L.A. Confidential (1997)","Murder at 1600 (1997)","Chasing Amy (1997)","Ulee's Gold (1997)","Heat (1995)","Devil's Own, The (1997)","Sting, The (1973)"]
+    }
+  ]
+}
