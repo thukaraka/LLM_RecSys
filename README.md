@@ -19,4 +19,4 @@ It explores how prompting formats, decoding temperatures, and decoding strategie
 | `Steam_GPT.ipynb` | Notebook for running GPT-based recommendation generation for steam. |
 | `Steam_Mistral.ipynb` | Notebook for running Mistral-based recommendation generation for steam. |
 | `steam_data_prep.py` | data preparation for recommendation generation in steam. |
-| | `data/steam-200k.csv` | game data |
+|  `data/steam-200k.csv` | game data |
