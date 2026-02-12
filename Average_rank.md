@@ -38,9 +38,13 @@ For every **(Model, Style)** pair, we compare all available temperatures:
     Avg Rank = (Rank_Prec + Rank_NDCG + Rank_Ent + Rank_Gini) / 4
     ```
 3.  **Winner Selection:**
-    The temperature with the **lowest** `avg_rank` is marked as the optimal setting.
+    The configuration with the **lowest** `avg_rank` is marked as the optimal setting.
 
-### Example Calculation
+   **Note on Metric Selection:**
+    * **For Output Format Analysis:** We calculated the average rank using **NDCG@10** (Accuracy), **Gini** (Fairness), and **Entropy** (Diversity). This analysis was conducted at a fixed deterministic temperature ($T=0$).
+    * **For Temperature Analysis:** We expanded the evaluation set to include **Precision@10** (i.e., NDCG, Precision, Gini, and Entropy). Since increasing temperature introduces stochasticity and potential hallucinations, incorporating a second strict accuracy metric was critical. This ensured that the selected "optimal" temperature maintains generative stability and relevance, rather than merely achieving high diversity scores at the expense of validity.
+
+### Example Calculation (Temperature Analysis)
 *If T=0.7 ranks 1st in Precision, 1st in Gini, but 4th in Entropy and 4th in NDCG:*
 $$\text{Avg Rank} = \frac{1 + 1 + 4 + 4}{4} = 2.5$$
 
