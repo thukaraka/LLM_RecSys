@@ -32,8 +32,11 @@ For every **(Model, Style)** pair, we compare all available temperatures:
 1.  **Rank Assignment:** * For **Precision, NDCG, and Entropy**, the temperature with the *highest* value gets **Rank 1**.
     * For **Gini**, the temperature with the *lowest* value gets **Rank 1**.
 2.  **Aggregation:**
-    We calculate the mean of these four ranks:
-    $$\text{Avg Rank} = \frac{\text{Rank}_{\text{Prec}} + \text{Rank}_{\text{NDCG}} + \text{Rank}_{\text{Ent}} + \text{Rank}_{\text{Gini}}}{4}$$
+    We calculate the mean of these four ranks. The formula is:
+
+    ```
+    Avg Rank = (Rank_Prec + Rank_NDCG + Rank_Ent + Rank_Gini) / 4
+    ```
 3.  **Winner Selection:**
     The temperature with the **lowest** `avg_rank` is marked as the optimal setting.
 
